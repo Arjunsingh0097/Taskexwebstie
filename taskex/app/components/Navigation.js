@@ -97,6 +97,9 @@ const Navigation = () => {
                 height={190}
                 className="w-50 h-auto group-hover:scale-105 transition-transform duration-300"
                 priority
+                onError={(e) => {
+                  console.error('Failed to load logo:', e);
+                }}
               />
             </div>
           </Link>

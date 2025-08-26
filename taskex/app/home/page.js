@@ -813,7 +813,7 @@ export default function Home() {
                             <div className="w-20 h-20 bg-gradient-to-br from-[#16CA95]/20 to-[#BDF0E1]/30 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-all duration-300 relative overflow-hidden">
                               {service.title === "AI & Automation" && (
                                 <Image
-                                  src="/images/ai.webp"
+                                  src="/images/Ai.webp"
                                   alt="AI & Automation"
                                   width={80}
                                   height={80}
@@ -822,7 +822,7 @@ export default function Home() {
                               )}
                               {service.title === "Cloud & DevOps" && (
                                 <Image
-                                  src="/images/cloud.webp"
+                                  src="/images/Cloud.webp"
                                   alt="Cloud & DevOps"
                                   width={80}
                                   height={80}
