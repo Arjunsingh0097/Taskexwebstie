@@ -90,7 +90,7 @@ export default function Contact() {
       color: "from-[#16CA95] to-[#BDF0E1]"
     },
     {
-      icon: MapPin,
+      icon: Building,
       title: "Office Address",
       details: ["JMD Megapolis, Office No. 246, 2nd Floor", "Sohna Road, Sector 48, Gurugram"],
       color: "from-[#16CA95] to-[#BDF0E1]"

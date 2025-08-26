@@ -203,25 +203,29 @@ const Footer = () => {
           <div className="absolute top-0 left-0 w-32 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#16CA95]"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-center space-x-3 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#16CA95] to-[#14B885] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="flex items-start space-x-3 group">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#16CA95] to-[#14B885] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                 <Phone className="w-5 h-5 text-white" />
               </div>
               <span className="text-gray-300 group-hover:text-white transition-colors">
               +919212715691</span>
             </div>
-            <div className="flex items-center space-x-3 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#16CA95] to-[#14B885] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="flex items-start space-x-3 group">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#16CA95] to-[#14B885] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                 <Mail className="w-5 h-5 text-white" />
               </div>
               <span className="text-gray-300 group-hover:text-white transition-colors">
               manager@taskex.in</span>
             </div>
-            <div className="flex items-center space-x-3 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#16CA95] to-[#14B885] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="flex items-start space-x-3 group">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#16CA95] to-[#14B885] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
-              <span className="text-gray-300 group-hover:text-white transition-colors">JMD Megapolis, office number 246, 2nd floor, Sohna Road, Sector 48,Gurugram</span>
+              <div className="text-gray-300 group-hover:text-white transition-colors text-sm leading-relaxed">
+                <div>JMD Megapolis, Office No. 246,</div>
+                <div>2nd Floor, Sohna Road,</div>
+                <div>Sector 48, Gurugram</div>
+              </div>
             </div>
           </div>
         </div>

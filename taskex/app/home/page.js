@@ -165,7 +165,7 @@ export default function Home() {
       {/* Content Container */}
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="relative overflow-hidden py-20 lg:py-32">
+      <section className="relative overflow-hidden py-20 lg:py-32">
           {/* Enhanced Background with Gradient */}
           <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F8F9FA] to-[#BDF0E1]/30"></div>
           
@@ -176,26 +176,26 @@ export default function Home() {
               backgroundSize: '40px 40px'
             }}></div>
           </div>
-          
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="relative"
-              >
+            >
                 {/* Enhanced Badge */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                   className="inline-flex items-center gap-3 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#373743] px-6 py-3 rounded-full text-sm font-semibold mb-8 shadow-lg border border-[#16CA95]/20 relative overflow-hidden group"
-                >
+              >
                   <div className="w-2 h-2 bg-[#16CA95] rounded-full animate-pulse"></div>
                   <span className="font-bold">TRUSTED BY FORTUNE 500 COMPANIES</span>
-                </motion.div>
-                
+              </motion.div>
+              
                 {/* Enhanced Main Heading */}
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
@@ -203,9 +203,9 @@ export default function Home() {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="text-5xl lg:text-7xl font-bold text-[#373743] leading-tight mb-8 relative"
                 >
-                  Transform Your Business with{" "}
+                Transform Your Business with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#16CA95] via-[#14B885] to-[#16CA95] drop-shadow-lg relative">
-                    Next-Gen Technology
+                  Next-Gen Technology
                     <motion.div
                       animate={{
                         backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
@@ -217,7 +217,7 @@ export default function Home() {
                       }}
                       className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent bg-[length:200%_100%] opacity-30"
                     />
-                  </span>
+                </span>
                 </motion.h1>
                 
                 {/* Enhanced Description */}
@@ -227,9 +227,9 @@ export default function Home() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="text-xl lg:text-2xl text-[#6B7280] mb-10 max-w-2xl font-medium leading-relaxed"
                 >
-                  At Taskex Technologies, we're your strategic partner in digital transformation. 
-                  We combine cutting-edge AI, cloud innovation, and deep industry expertise to deliver 
-                  solutions that drive measurable business growth and competitive advantage.
+                At Taskex Technologies, we're your strategic partner in digital transformation. 
+                We combine cutting-edge AI, cloud innovation, and deep industry expertise to deliver 
+                solutions that drive measurable business growth and competitive advantage.
                 </motion.p>
                 
                 {/* Enhanced Buttons */}
@@ -239,10 +239,10 @@ export default function Home() {
                   transition={{ duration: 0.8, delay: 0.5 }}
                   className="flex flex-col sm:flex-row gap-6 mb-10"
                 >
-                  <motion.button
+                <motion.button
                     whileHover={{ scale: 1.05, y: -3 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => window.location.href = '/contact'}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => window.location.href = '/contact'}
                     className="relative overflow-hidden bg-gradient-to-r from-[#16CA95] to-[#14B885] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-xl transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-[#16CA95]/25 group"
                   >
                     <motion.div
@@ -257,15 +257,15 @@ export default function Home() {
                       className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
                     />
                     <span className="relative z-10 flex items-center gap-3">
-                      Start Our Journey
+                  Start Our Journey
                       <ArrowRight className="w-6 h-6" />
                     </span>
-                  </motion.button>
-                  
-                  <motion.button
+                </motion.button>
+                
+                <motion.button
                     whileHover={{ scale: 1.05, y: -3 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => window.location.href = '/contact'}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => window.location.href = '/contact'}
                     className="relative overflow-hidden border-2 border-[#16CA95] text-[#16CA95] px-10 py-5 rounded-2xl font-bold text-lg hover:bg-[#16CA95] hover:text-white transition-all duration-300 hover:shadow-lg group"
                   >
                     <motion.div
@@ -280,20 +280,20 @@ export default function Home() {
                       className="absolute inset-0 bg-gradient-to-r from-transparent via-[#16CA95]/10 to-transparent"
                     />
                     <span className="relative z-10">Schedule Consultation</span>
-                  </motion.button>
+                </motion.button>
                 </motion.div>
                 
 
-              </motion.div>
-              
-              <motion.div
+            </motion.div>
+            
+            <motion.div
                 initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
+              animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative"
-              >
+              className="relative"
+            >
                 {/* Enhanced Card with Multiple Layers */}
-                <div className="relative">
+              <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/10 to-[#BDF0E1]/20 rounded-3xl blur-xl"></div>
                   <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-sm rounded-3xl border border-white/30"></div>
                   
@@ -301,41 +301,41 @@ export default function Home() {
                     {/* Top Decorative Line */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] rounded-full"></div>
                     
-                    <Image
-                      src="/images/office-person.jpg"
-                      alt="Professional team collaboration"
-                      width={500}
-                      height={400}
+                  <Image
+                    src="/images/office-person.jpg"
+                    alt="Professional team collaboration"
+                    width={500}
+                    height={400}
                       className="rounded-2xl w-full h-auto shadow-lg relative z-10"
-                    />
+                  />
                     
                     {/* Enhanced Stats Grid */}
                     <div className="mt-8 grid grid-cols-2 gap-6">
-                      <motion.div
+                    <motion.div
                         whileHover={{ scale: 1.05, y: -5 }}
                         className="relative overflow-hidden bg-gradient-to-r from-[#BDF0E1] to-[#16CA95] p-6 rounded-2xl text-[#373743] shadow-lg group"
-                      >
+                    >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="text-3xl font-bold relative z-10 mb-1">98%</div>
                         <div className="text-sm text-[#6B7280] relative z-10 font-medium">Client Satisfaction</div>
-                      </motion.div>
-                      <motion.div
+                    </motion.div>
+                    <motion.div
                         whileHover={{ scale: 1.05, y: -5 }}
                         className="relative overflow-hidden bg-gradient-to-r from-[#16CA95] to-[#16CA95] p-6 rounded-2xl text-white shadow-lg group"
-                      >
+                    >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="text-3xl font-bold relative z-10 mb-1">500+</div>
                         <div className="text-sm opacity-90 relative z-10 font-medium">Projects Delivered</div>
-                      </motion.div>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
-              </motion.div>
-            </div>
+              </div>
+            </motion.div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Stats Section */}
+      {/* Stats Section */}
         <section className="py-20 bg-gradient-to-br from-[#F8F9FA] to-[#BDF0E1]/30 relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
@@ -350,7 +350,7 @@ export default function Home() {
           
           {/* Enhanced Floating Background Elements */}
           <div className="absolute inset-0 pointer-events-none">
-            <motion.div
+              <motion.div
               animate={{
                 y: [0, -30, 0],
                 rotate: [0, 180, 360],
@@ -516,7 +516,7 @@ export default function Home() {
                   className="w-8 h-0.5 bg-gradient-to-l from-transparent to-[#16CA95] rounded-full"
                 />
               </motion.div>
-            </div>
+                </div>
             
             {/* Enhanced Stats Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -623,7 +623,7 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 0.8 + index * 0.15 }}
                         className="text-4xl lg:text-5xl font-bold text-[#373743] mb-2 group-hover:text-[#16CA95] transition-colors duration-300 leading-tight"
                       >
-                        {stat.value}
+                  {stat.value}
                       </motion.div>
                       <motion.div
                         initial={{ opacity: 0, y: 15 }}
@@ -631,7 +631,7 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 1 + index * 0.15 }}
                         className="text-[#6B7280] font-semibold text-lg group-hover:text-[#373743] transition-colors duration-300 leading-tight"
                       >
-                        {stat.label}
+                  {stat.label}
                       </motion.div>
                     </div>
                     
@@ -668,10 +668,10 @@ export default function Home() {
                       }}
                       className="absolute bottom-2 left-2 w-4 h-4 border border-[#BDF0E1]/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
             
             {/* Enhanced Bottom CTA Section */}
             <motion.div
@@ -701,8 +701,8 @@ export default function Home() {
                 </motion.div>
               </motion.button>
             </motion.div>
-          </div>
-        </section>
+        </div>
+      </section>
 
         {/* Services Section - Path Design */}
         <section className="py-20 bg-gradient-to-br from-[#F0FDF4] via-[#ECFDF5] to-[#D1FAE5] relative overflow-hidden">
@@ -724,7 +724,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Enhanced Header */}
             <div className="text-center mb-20">
-              <motion.div
+          <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -736,13 +736,13 @@ export default function Home() {
               </motion.div>
               
               <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
                 className="text-5xl lg:text-6xl font-bold text-[#373743] mb-8"
-              >
-                Our Core Services
+          >
+              Our Core Services
               </motion.h2>
               
               <motion.div
@@ -763,8 +763,8 @@ export default function Home() {
                 Follow the path of innovation as we guide you through comprehensive technology solutions 
                 designed to transform your business and drive sustainable growth in the digital age.
               </motion.p>
-            </div>
-
+                </div>
+                
             {/* Path Design Container */}
             <div className="relative">
               {/* Main Path Line */}
@@ -865,17 +865,17 @@ export default function Home() {
                             <h3 className={`text-xl font-bold mb-3 group-hover:text-[#16CA95] transition-colors duration-300 ${
                               selectedService === index ? 'text-white' : 'text-[#373743]'
                             }`}>
-                              {service.title}
-                            </h3>
+                  {service.title}
+                </h3>
                           </div>
-                          
+                
                           {/* Service Description */}
                           <p className={`text-sm leading-relaxed mb-6 flex-grow ${
                             selectedService === index ? 'text-white/90' : 'text-[#6B7280]'
                           }`}>
-                            {service.description}
-                          </p>
-                          
+                  {service.description}
+                </p>
+                
                           {/* Learn More Button */}
                           <motion.button
                             whileHover={{ scale: 1.05 }}
@@ -941,17 +941,17 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
             </div>
-            
+
             {/* Bottom CTA */}
-            <motion.div
+          <motion.div
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-center mt-20"
             >
@@ -1049,7 +1049,7 @@ export default function Home() {
                     {/* Enhanced Icon Container */}
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6 }}
                       className={`w-20 h-20 bg-gradient-to-br ${process.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300 relative overflow-hidden`}
                     >
                       {/* Shimmer Effect */}
@@ -1525,20 +1525,20 @@ export default function Home() {
               className="text-white"
             >
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Ready to Transform Your Business?
-              </h2>
-              
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Let's discuss how our comprehensive technology solutions can help you achieve 
-                breakthrough business results, optimize operations, and create sustainable 
-                competitive advantage in your industry.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <motion.button
+              Ready to Transform Your Business?
+            </h2>
+            
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Let's discuss how our comprehensive technology solutions can help you achieve 
+              breakthrough business results, optimize operations, and create sustainable 
+              competitive advantage in your industry.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.button
                   whileHover={{ scale: 1.05, y: -3 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => window.location.href = '/contact'}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => window.location.href = '/contact'}
                   className="relative overflow-hidden bg-white text-[#16CA95] px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl group"
                 >
                   <motion.div
@@ -1553,15 +1553,15 @@ export default function Home() {
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-[#16CA95]/10 to-transparent"
                   />
                   <span className="relative z-10 flex items-center gap-3">
-                    Start Our Journey
+                Start Our Journey
                     <ArrowRight className="w-6 h-6" />
                   </span>
-                </motion.button>
-                
-                <motion.button
+              </motion.button>
+              
+              <motion.button
                   whileHover={{ scale: 1.05, y: -3 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => window.location.href = '/contact'}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => window.location.href = '/contact'}
                   className="relative overflow-hidden border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white hover:text-[#16CA95] transition-all duration-300 group"
                 >
                   <motion.div
@@ -1576,11 +1576,11 @@ export default function Home() {
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
                   />
                   <span className="relative z-10">Schedule Consultation</span>
-                </motion.button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+              </motion.button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
       </div>
     </div>
   );
