@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+/* Base font size for consistent rem calculations - Chrome optimization */
+html {
+  font-size: 18px; /* Increased from 16px to make Chrome larger like Safari */
+}
+
+/* Ensure Tailwind utilities work consistently across browsers - Chrome optimized */
+.text-xs { font-size: 0.8rem; }
+.text-sm { font-size: 0.95rem; }
+.text-base { font-size: 1.1rem; }
+.text-lg { font-size: 1.25rem; }
+.text-xl { font-size: 1.4rem; }
+.text-2xl { font-size: 1.7rem; }
+.text-3xl { font-size: 2.1rem; }
+.text-4xl { font-size: 2.5rem; }
+.text-5xl { font-size: 3.3rem; }
+.text-6xl { font-size: 4.1rem; }
+
+/* Fix grid layout issues */
+.grid {
+  display: grid !important;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+/* Ensure proper spacing */
+.gap-4 { gap: 1rem !important; }
+.gap-6 { gap: 1.5rem !important; }
+.gap-8 { gap: 2rem !important; }
+.gap-12 { gap: 3rem !important; }
+.gap-16 { gap: 4rem !important; }
+.gap-20 { gap: 5rem !important; }
+
+:root {
+  --color-primary: #16CA95;
+  --color-primary-light: #BDF0E1;
+  --color-primary-dark: #14B885;
+  --color-secondary: #16CA95;
+  --color-secondary-light: #BDF0E1;
+  --color-secondary-dark: #14B885;
+  --color-accent: #16CA95;
+  --color-dark: #373743;
+  --color-white: #FFFFFF;
+  --color-gray-light: #F8F9FA;
+  --color-gray: #6B7280;
+  --color-gray-dark: #475569;
+  
+  /* Chrome scaling variables */
+  --chrome-scale: 1;
+  --chrome-font-scale: 1;
+}
+
+@theme inline {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-dark);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 18px; /* Increased to make Chrome larger like Safari */
+  line-height: 1.6; /* Better readability */
+}
+
+/* Chrome-specific optimizations to match Safari sizing */
+@supports not (-webkit-appearance: none) {
+  body {
+    font-size: 18px; /* Ensure Chrome uses larger font */
+    transform: scale(1.05); /* Slightly scale up Chrome */
+    transform-origin: top left;
+  }
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+  body {
+    font-size: 18px; /* Match Chrome size */
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Fix for Safari button sizing */
+  button, input, select, textarea {
+    font-size: 18px; /* Increased to match body */
+  }
+}
+
+/* Ensure consistent sizing across browsers */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px; /* Consistent base size */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+  /* Fix for Safari font scaling */
+  body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Fix for Safari button sizing */
+  button, input, select, textarea {
+    font-size: 16px;
+  }
+}
+
+/* Chrome-specific scaling to match Safari appearance - Fixed layout issues */
+@supports not (-webkit-appearance: none) {
+  :root {
+    --chrome-font-scale: 1.15;
+  }
+  
+  /* Make Chrome UI elements larger without breaking layout */
+  body {
+    font-size: 18px !important;
+    /* Removed transform scale to fix layout issues */
+  }
+  
+  /* Scale up all text elements in Chrome */
+  h1, h2, h3, h4, h5, h6, p, span, div, button, input, select, textarea {
+    font-size: 1.15em !important;
+  }
+  
+  /* Scale up specific Tailwind text classes */
+  .text-xs { font-size: 0.95rem !important; }
+  .text-sm { font-size: 1.1rem !important; }
+  .text-base { font-size: 1.25rem !important; }
+  .text-lg { font-size: 1.4rem !important; }
+  .text-xl { font-size: 1.55rem !important; }
+  .text-2xl { font-size: 1.9rem !important; }
+  .text-3xl { font-size: 2.3rem !important; }
+  .text-4xl { font-size: 2.7rem !important; }
+  .text-5xl { font-size: 3.6rem !important; }
+  .text-6xl { font-size: 4.5rem !important; }
+  
+  /* Scale up spacing proportionally */
+  .p-4 { padding: 1.15rem !important; }
+  .p-6 { padding: 1.725rem !important; }
+  .p-8 { padding: 2.3rem !important; }
+  .p-12 { padding: 3.45rem !important; }
+  .p-16 { padding: 4.6rem !important; }
+  .p-20 { padding: 5.75rem !important; }
+  .p-24 { padding: 6.9rem !important; }
+  .p-32 { padding: 9.2rem !important; }
+  
+  .m-4 { margin: 1.15rem !important; }
+  .m-6 { margin: 1.725rem !important; }
+  .m-8 { margin: 2.3rem !important; }
+  .m-12 { margin: 3.45rem !important; }
+  .m-16 { margin: 4.6rem !important; }
+  .m-20 { margin: 5.75rem !important; }
+  .m-24 { margin: 6.9rem !important; }
+  .m-32 { margin: 9.2rem !important; }
+  
+  /* Fix grid layouts */
+  .grid { display: grid !important; }
+  .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  
+  /* Ensure proper element sizing */
+  .w-16 { width: 4.6rem !important; }
+  .w-20 { width: 5.75rem !important; }
+  .w-24 { width: 6.9rem !important; }
+  .w-32 { width: 9.2rem !important; }
+  .w-40 { width: 11.5rem !important; }
+  
+  .h-16 { height: 4.6rem !important; }
+  .h-20 { height: 5.75rem !important; }
+  .h-24 { height: 6.9rem !important; }
+  .h-32 { height: 9.2rem !important; }
+  .h-40 { height: 11.5rem !important; }
+}
+
+/* Ensure consistent element shapes and borders */
+.rounded-lg { border-radius: 0.5rem !important; }
+.rounded-xl { border-radius: 0.75rem !important; }
+.rounded-2xl { border-radius: 1rem !important; }
+.rounded-3xl { border-radius: 1.5rem !important; }
+.rounded-full { border-radius: 9999px !important; }
+
+/* Fix button and input shapes */
+button, input, select, textarea {
+  border-radius: inherit;
+}
+
+/* Ensure consistent card heights and layouts */
+.grid > * {
+  height: 100%;
+}
+
+/* Fix service cards consistency */
+.min-h-\[400px\] {
+  min-height: 400px !important;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px !important;
+}
+
+.min-h-\[350px\] {
+  min-height: 350px !important;
+}
+
+/* Ensure flex layouts work properly */
+.flex.flex-col {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Fix grid gap consistency */
+.gap-8 {
+  gap: 2rem !important;
+}
+
+/* Ensure proper card proportions */
+.rounded-3xl {
+  border-radius: 1.5rem !important;
+}
+
+.rounded-2xl {
+  border-radius: 1rem !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark);
+}
