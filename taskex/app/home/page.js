@@ -167,7 +167,7 @@ export default function Home() {
         {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32">
           {/* Enhanced Background with Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F8F9FA] to-[#BDF0E1]/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0A0A0A] to-[#16CA95]/20"></div>
           
           {/* Animated Grid Pattern */}
           <div className="absolute inset-0 opacity-5">
@@ -190,7 +190,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                  className="inline-flex items-center gap-3 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#373743] px-6 py-3 rounded-full text-sm font-semibold mb-8 shadow-lg border border-[#16CA95]/20 relative overflow-hidden group"
+                  className="inline-flex items-center gap-3 bg-gradient-to-r from-[#16CA95]/20 to-[#16CA95]/10 text-[#16CA95] px-6 py-3 rounded-full text-sm font-semibold mb-8 shadow-lg border border-[#16CA95]/40 relative overflow-hidden group"
               >
                   <div className="w-2 h-2 bg-[#16CA95] rounded-full animate-pulse"></div>
                   <span className="font-bold">TRUSTED BY FORTUNE 500 COMPANIES</span>
@@ -201,7 +201,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className="text-5xl lg:text-7xl font-bold text-[#373743] leading-tight mb-8 relative"
+                  className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-8 relative"
                 >
                 Transform Your Business with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#16CA95] via-[#14B885] to-[#16CA95] drop-shadow-lg relative">
@@ -225,7 +225,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="text-xl lg:text-2xl text-[#6B7280] mb-10 max-w-2xl font-medium leading-relaxed"
+                  className="text-xl lg:text-2xl text-gray-300 mb-10 max-w-2xl font-medium leading-relaxed"
                 >
                 At Taskex Technologies, we're your strategic partner in digital transformation. 
                 We combine cutting-edge AI, cloud innovation, and deep industry expertise to deliver 
@@ -294,10 +294,10 @@ export default function Home() {
             >
                 {/* Enhanced Card with Multiple Layers */}
               <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/10 to-[#BDF0E1]/20 rounded-3xl blur-xl"></div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-sm rounded-3xl border border-white/30"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/20 to-[#16CA95]/10 rounded-3xl blur-xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/90 to-[#0A0A0A]/80 backdrop-blur-sm rounded-3xl border border-[#16CA95]/30"></div>
                   
-                  <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-white/50">
+                  <div className="relative bg-black/90 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-[#16CA95]/50">
                     {/* Top Decorative Line */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] rounded-full"></div>
                     
@@ -313,19 +313,19 @@ export default function Home() {
                     <div className="mt-8 grid grid-cols-2 gap-6">
                     <motion.div
                         whileHover={{ scale: 1.05, y: -5 }}
-                        className="relative overflow-hidden bg-gradient-to-r from-[#BDF0E1] to-[#16CA95] p-6 rounded-2xl text-[#373743] shadow-lg group"
+                        className="relative overflow-hidden bg-gradient-to-r from-[#16CA95] to-[#14B885] p-6 rounded-2xl text-black shadow-lg group"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="text-3xl font-bold relative z-10 mb-1">98%</div>
-                        <div className="text-sm text-[#6B7280] relative z-10 font-medium">Client Satisfaction</div>
+                        <div className="text-sm text-black/80 relative z-10 font-medium">Client Satisfaction</div>
                     </motion.div>
                     <motion.div
                         whileHover={{ scale: 1.05, y: -5 }}
-                        className="relative overflow-hidden bg-gradient-to-r from-[#16CA95] to-[#16CA95] p-6 rounded-2xl text-white shadow-lg group"
+                        className="relative overflow-hidden bg-gradient-to-r from-[#14B885] to-[#16CA95] p-6 rounded-2xl text-black shadow-lg group"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="text-3xl font-bold relative z-10 mb-1">500+</div>
-                        <div className="text-sm opacity-90 relative z-10 font-medium">Projects Delivered</div>
+                        <div className="text-sm text-black/80 relative z-10 font-medium">Projects Delivered</div>
                     </motion.div>
                   </div>
                 </div>
@@ -336,7 +336,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-        <section className="py-20 bg-gradient-to-br from-[#F8F9FA] to-[#BDF0E1]/30 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-br from-black via-[#0A0A0A] to-[#16CA95]/10 relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0" style={{
@@ -429,7 +429,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20, scale: 0.8 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#373743] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/20"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/20 to-[#16CA95]/10 text-[#16CA95] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/40"
               >
                 <motion.div
                   animate={{
@@ -450,7 +450,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-                className="text-4xl lg:text-5xl font-bold text-[#373743] mb-6"
+                className="text-4xl lg:text-5xl font-bold text-white mb-6"
               >
                 Our Success Metrics
               </motion.h2>
@@ -466,7 +466,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                className="text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed"
+                className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
               >
                 Quantifying our impact through measurable achievements and client success stories.
               </motion.p>
@@ -542,13 +542,13 @@ export default function Home() {
                   className="group relative h-full flex flex-col"
                 >
                   {/* Enhanced Card Background Layers */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/60 rounded-2xl blur-sm"></div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/5 to-[#BDF0E1]/10 rounded-2xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-[#0A0A0A]/60 rounded-2xl blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/10 to-[#16CA95]/5 rounded-2xl"></div>
                   
                   {/* Top Decorative Line */}
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50 flex flex-col flex-grow h-full overflow-hidden">
+                  <div className="relative bg-black/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#16CA95]/30 flex flex-col flex-grow h-full overflow-hidden">
                     {/* Enhanced Icon Container */}
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.2 }}
@@ -621,7 +621,7 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.8 + index * 0.15 }}
-                        className="text-4xl lg:text-5xl font-bold text-[#373743] mb-2 group-hover:text-[#16CA95] transition-colors duration-300 leading-tight"
+                        className="text-4xl lg:text-5xl font-bold text-white mb-2 group-hover:text-[#16CA95] transition-colors duration-300 leading-tight"
                       >
                   {stat.value}
                       </motion.div>
@@ -629,7 +629,7 @@ export default function Home() {
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1 + index * 0.15 }}
-                        className="text-[#6B7280] font-semibold text-lg group-hover:text-[#373743] transition-colors duration-300 leading-tight"
+                        className="text-gray-400 font-semibold text-lg group-hover:text-gray-300 transition-colors duration-300 leading-tight"
                       >
                   {stat.label}
                       </motion.div>
@@ -705,7 +705,7 @@ export default function Home() {
       </section>
 
         {/* Services Section - Path Design */}
-        <section className="py-20 bg-gradient-to-br from-[#F0FDF4] via-[#ECFDF5] to-[#D1FAE5] relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-br from-black via-[#0A0A0A] to-[#16CA95]/10 relative overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0">
             <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-[#16CA95]/10 to-[#BDF0E1]/20 rounded-full blur-3xl animate-pulse"></div>
@@ -729,7 +729,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-[#16CA95] px-6 py-3 rounded-full text-sm font-medium mb-8 shadow-xl border border-white/50"
+                className="inline-flex items-center gap-2 bg-[#16CA95]/20 backdrop-blur-sm text-[#16CA95] px-6 py-3 rounded-full text-sm font-medium mb-8 shadow-xl border border-[#16CA95]/40"
               >
                 <div className="w-3 h-3 bg-[#16CA95] rounded-full animate-pulse"></div>
                 <span className="font-bold tracking-wide">OUR JOURNEY</span>
@@ -740,7 +740,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="text-5xl lg:text-6xl font-bold text-[#373743] mb-8"
+                className="text-5xl lg:text-6xl font-bold text-white mb-8"
           >
               Our Core Services
               </motion.h2>
@@ -758,7 +758,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl text-[#6B7280] max-w-4xl mx-auto leading-relaxed font-medium"
+                className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium"
               >
                 Follow the path of innovation as we guide you through comprehensive technology solutions 
                 designed to transform your business and drive sustainable growth in the digital age.
@@ -798,7 +798,7 @@ export default function Home() {
                         <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/20 to-[#BDF0E1]/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                         
                         {/* Main Card */}
-                        <div className={`relative bg-white/95 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/50 w-80 h-96 flex flex-col justify-between transform transition-all duration-500 ${
+                        <div className={`relative bg-black/95 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-[#16CA95]/30 w-80 h-96 flex flex-col justify-between transform transition-all duration-500 ${
                           selectedService === index 
                             ? 'bg-gradient-to-br from-[#16CA95] to-[#14B885] text-white scale-105 shadow-[#16CA95]/25' 
                             : 'group-hover:shadow-[#16CA95]/20'
@@ -863,7 +863,7 @@ export default function Home() {
                             
                             {/* Service Title */}
                             <h3 className={`text-xl font-bold mb-3 group-hover:text-[#16CA95] transition-colors duration-300 ${
-                              selectedService === index ? 'text-white' : 'text-[#373743]'
+                              selectedService === index ? 'text-white' : 'text-white'
                             }`}>
                   {service.title}
                 </h3>
@@ -871,7 +871,7 @@ export default function Home() {
                 
                           {/* Service Description */}
                           <p className={`text-sm leading-relaxed mb-6 flex-grow ${
-                            selectedService === index ? 'text-white/90' : 'text-[#6B7280]'
+                            selectedService === index ? 'text-white/90' : 'text-gray-400'
                           }`}>
                   {service.description}
                 </p>
@@ -925,10 +925,10 @@ export default function Home() {
                         index % 2 === 0 ? 'lg:items-start lg:text-left' : 'lg:items-end lg:text-right'
                       }`}>
                         <div className={`max-w-sm ${index % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}>
-                          <h4 className="text-2xl font-bold text-[#373743] mb-4">
+                          <h4 className="text-2xl font-bold text-white mb-4">
                             {service.title}
                           </h4>
-                          <p className="text-[#6B7280] leading-relaxed mb-6">
+                          <p className="text-gray-400 leading-relaxed mb-6">
                             {service.description}
                           </p>
                           <div className="flex flex-wrap gap-2">
@@ -968,7 +968,7 @@ export default function Home() {
         </section>
 
         {/* Creative Process Section */}
-        <section className="py-20 bg-white relative overflow-hidden">
+        <section className="py-20 bg-black relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0" style={{
@@ -980,18 +980,18 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Enhanced Header */}
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#373743] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/20">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/20 to-[#16CA95]/10 text-[#16CA95] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/40">
                 <div className="w-2 h-2 bg-[#16CA95] rounded-full"></div>
                 <span className="font-semibold">METHODOLOGY</span>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#373743] mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
                 Our Creative Process
               </h2>
               
               <div className="w-32 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] mx-auto mb-4"></div>
               
-              <p className="text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 A proven methodology that ensures successful project delivery and exceptional results.
               </p>
             </div>
@@ -1034,13 +1034,13 @@ export default function Home() {
                   className="group relative"
                 >
                   {/* Card Background Layers */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/60 rounded-2xl blur-sm"></div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/5 to-[#BDF0E1]/10 rounded-2xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-[#0A0A0A]/60 rounded-2xl blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/10 to-[#16CA95]/5 rounded-2xl"></div>
                   
                   {/* Top Decorative Line */}
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50 text-center">
+                  <div className="relative bg-black/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#16CA95]/30 text-center">
                     {/* Step Number */}
                     <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-[#16CA95] to-[#BDF0E1] rounded-full flex items-center justify-center text-white text-sm font-bold">
                       {process.step}
@@ -1083,12 +1083,12 @@ export default function Home() {
                     </motion.div>
                     
                     {/* Process Title */}
-                    <h3 className="text-xl font-bold text-[#373743] mb-4 group-hover:text-[#16CA95] transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#16CA95] transition-colors duration-300">
                       {process.title}
                     </h3>
                     
                     {/* Process Description */}
-                    <p className="text-[#6B7280] leading-relaxed text-sm">
+                    <p className="text-gray-400 leading-relaxed text-sm">
                       {process.description}
                     </p>
                     
@@ -1105,7 +1105,7 @@ export default function Home() {
         </section>
 
         {/* Technology Showcase Section */}
-        <section className="py-20 bg-gradient-to-br from-[#F8F9FA] to-[#BDF0E1]/30 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-br from-black via-[#0A0A0A] to-[#16CA95]/10 relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0" style={{
@@ -1159,18 +1159,18 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Enhanced Header */}
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#373743] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/20">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/20 to-[#16CA95]/10 text-[#16CA95] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/40">
                 <div className="w-2 h-2 bg-[#16CA95] rounded-full"></div>
                 <span className="font-semibold">TECHNOLOGIES</span>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#373743] mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
                 Cutting-Edge Technologies
               </h2>
               
               <div className="w-32 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] mx-auto mb-4"></div>
               
-              <p className="text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 We leverage the latest technologies to deliver innovative solutions that drive business transformation and competitive advantage.
               </p>
               
@@ -1228,13 +1228,13 @@ export default function Home() {
                   className="group relative"
                 >
                   {/* Card Background Layers */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/60 rounded-2xl blur-sm"></div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/5 to-[#BDF0E1]/10 rounded-2xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-[#0A0A0A]/60 rounded-2xl blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/10 to-[#16CA95]/5 rounded-2xl"></div>
                   
                   {/* Top Decorative Line */}
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50 text-center">
+                  <div className="relative bg-black/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#16CA95]/30 text-center">
                     {/* Enhanced Icon Container */}
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.1 }}
@@ -1272,12 +1272,12 @@ export default function Home() {
                     </motion.div>
                     
                     {/* Technology Name */}
-                    <h3 className="text-lg font-bold text-[#373743] mb-2 group-hover:text-[#16CA95] transition-colors duration-300">
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#16CA95] transition-colors duration-300">
                       {tech.name}
                     </h3>
                     
                     {/* Technology Description */}
-                    <p className="text-xs text-[#6B7280] leading-tight opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <p className="text-xs text-gray-400 leading-tight opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                       {tech.description}
                     </p>
                     
@@ -1307,13 +1307,13 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 bg-white relative overflow-hidden">
+        <section className="py-20 bg-black relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#373743] mb-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
                 What Our Clients Say
               </h2>
-              <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
+              <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                 Real feedback from businesses we've transformed
               </p>
             </div>
@@ -1330,17 +1330,17 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   whileHover={{ scale: 1.02, y: -5 }}
-                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+                  className="bg-black/90 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#16CA95]/30"
                 >
                   <div className="flex items-center mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                      <Star key={i} className="w-5 h-5 text-[#16CA95] fill-current" />
                     ))}
                   </div>
-                  <p className="text-[#6B7280] mb-4 italic">"{testimonial.text}"</p>
+                  <p className="text-gray-400 mb-4 italic">"{testimonial.text}"</p>
                   <div>
-                    <p className="font-semibold text-[#373743]">{testimonial.name}</p>
-                    <p className="text-sm text-[#6B7280]">{testimonial.role}</p>
+                    <p className="font-semibold text-white">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500">{testimonial.role}</p>
                   </div>
                 </motion.div>
               ))}
@@ -1349,7 +1349,7 @@ export default function Home() {
         </section>
 
         {/* Awards & Recognition Section */}
-        <section className="py-20 bg-gradient-to-br from-[#F8F9FA] to-[#BDF0E1]/20 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-br from-black via-[#0A0A0A] to-[#16CA95]/10 relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0" style={{
@@ -1361,18 +1361,18 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Enhanced Header */}
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#373743] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/20">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/20 to-[#16CA95]/10 text-[#16CA95] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/40">
                 <div className="w-2 h-2 bg-[#16CA95] rounded-full"></div>
                 <span className="font-semibold">RECOGNITION</span>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#373743] mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
                 Awards & Recognition
               </h2>
               
               <div className="w-32 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] mx-auto mb-4"></div>
               
-              <p className="text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 Industry recognition for our excellence and innovation.
               </p>
             </div>
@@ -1411,13 +1411,13 @@ export default function Home() {
                   className="group relative h-full flex flex-col"
                 >
                   {/* Card Background Layers */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-white/60 rounded-2xl blur-sm"></div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/5 to-[#BDF0E1]/10 rounded-2xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-[#0A0A0A]/60 rounded-2xl blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#16CA95]/10 to-[#16CA95]/5 rounded-2xl"></div>
                   
                   {/* Top Decorative Line */}
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-gradient-to-r from-[#16CA95] to-[#BDF0E1] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50 flex flex-col flex-grow h-full">
+                  <div className="relative bg-black/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#16CA95]/30 flex flex-col flex-grow h-full">
                     {/* Enhanced Icon Container */}
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.1 }}
@@ -1456,12 +1456,12 @@ export default function Home() {
                     
                     {/* Award Title - Fixed Height Container */}
                     <div className="text-center flex-grow flex flex-col justify-center min-h-[4rem]">
-                      <h3 className="text-lg font-bold text-[#373743] mb-3 group-hover:text-[#16CA95] transition-colors duration-300 leading-tight">
+                      <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#16CA95] transition-colors duration-300 leading-tight">
                         {award.title}
                       </h3>
                       
                       {/* Award Description - Always Visible */}
-                      <p className="text-xs text-[#6B7280] leading-tight">
+                      <p className="text-xs text-gray-400 leading-tight">
                         {award.description}
                       </p>
                     </div>
