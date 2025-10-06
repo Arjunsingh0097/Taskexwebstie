@@ -113,7 +113,7 @@ const Footer = () => {
               <div className="relative">
                 <div className="bg-white rounded-lg p-2 shadow-lg">
                   <Image
-                    src="/images/taskexlogo.png"
+                    src="/images/taskeximage-removebg-preview.png"
                     alt="Taskex Technologies Logo"
                     width={190}
                     height={190}

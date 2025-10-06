@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { 
   Target, 
   CheckCircle2, 
@@ -256,6 +257,20 @@ export default function StrategicConsulting() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#F8F9FA] to-[#DBEAFE]/30 py-20 lg:py-32">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/Stratergic_consultation.webp"
+            alt="Strategic Consulting Background"
+            fill
+            className="object-cover"
+            style={{ objectPosition: 'center top' }}
+            priority
+          />
+          {/* Dark Overlay - Very light overlay for maximum image visibility */}
+          <div className="absolute inset-0 bg-black/15"></div>
+        </div>
+        
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-[#16CA95]/20 to-[#BDF0E1]/30 rounded-full blur-3xl"></div>
@@ -357,7 +372,7 @@ export default function StrategicConsulting() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#BDF0E1] to-[#16CA95] text-[#373743] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#16CA95] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/20"
               >
                 <Sparkles className="w-4 h-4 text-[#16CA95]" />
                 <span className="font-semibold">STRATEGIC CONSULTING</span>
@@ -368,7 +383,7 @@ export default function StrategicConsulting() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-4xl lg:text-6xl font-bold text-[#373743] mb-6"
+                className="text-4xl lg:text-6xl font-bold text-white mb-6"
               >
                 Strategic Consulting
               </motion.h1>
@@ -378,7 +393,7 @@ export default function StrategicConsulting() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl lg:text-2xl text-[#6B7280] mb-8"
+                className="text-xl lg:text-2xl text-white/90 mb-8"
               >
                 Navigate complex business challenges with expert strategic guidance. Our consultants provide data-driven insights, market analysis, and strategic roadmaps that align technology investments with business objectives for sustainable growth.
               </motion.p>

@@ -28,7 +28,8 @@ const Navigation = () => {
         { name: 'Digital Transformation', href: '/services/digital-transformation' },
         { name: 'AI & Automation', href: '/services/ai-automation' },
         { name: 'Cloud & DevOps', href: '/services/cloud-devops' },
-        { name: 'Consulting', href: '/services/consulting' }
+        { name: 'Strategic Consulting', href: '/services/strategic-consulting' },
+        { name: 'Business Process Services', href: '/services/business-process-services' }
       ]
     },
 
@@ -91,7 +92,7 @@ const Navigation = () => {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
               <Image
-                src="/images/taskexlogo.png"
+                src="/images/taskeximage-removebg-preview.png"
                 alt="Taskex Technologies Logo"
                 width={190}
                 height={190}

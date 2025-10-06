@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { 
   TrendingUp, 
   Zap, 
@@ -96,6 +97,25 @@ export default function Services() {
         "Optimized technology investments",
         "Reduced implementation risks",
         "Measurable business outcomes"
+      ],
+      color: "from-[#16CA95] to-[#BDF0E1]"
+    },
+    {
+      icon: Settings,
+      title: "Business Process Services",
+      description: "Complete business operations management from company formation to payroll processing and everything in between.",
+      features: [
+        "Company Formation & Legal Setup",
+        "Human Resources & Payroll Management",
+        "Financial Management & Accounting",
+        "Operations & Process Management",
+        "Technology & Automation"
+      ],
+      benefits: [
+        "Complete business setup in 5-10 days",
+        "Automated payroll and tax compliance",
+        "Real-time financial reporting",
+        "Streamlined operations and processes"
       ],
       color: "from-[#16CA95] to-[#BDF0E1]"
     }
@@ -313,35 +333,49 @@ export default function Services() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#F8F9FA] to-[#BDF0E1]/20 py-20 lg:py-32">
+      <section className="relative overflow-hidden py-20 lg:py-32">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/services.png"
+            alt="Taskex Services Background"
+            fill
+            className="object-cover"
+            style={{ objectPosition: 'center top' }}
+            priority
+          />
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/15"></div>
+        </div>
+        
         {/* Background decorative elements */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-10">
           <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-[#16CA95]/20 to-[#BDF0E1]/30 rounded-full blur-3xl"></div>
           <div className="absolute top-40 right-20 w-32 h-32 bg-gradient-to-br from-[#2563EB]/20 to-[#DBEAFE]/30 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-1/3 w-28 h-28 bg-gradient-to-br from-[#16CA95]/15 to-[#BDF0E1]/25 rounded-full blur-2xl"></div>
           <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-br from-[#2563EB]/15 to-[#DBEAFE]/25 rounded-full blur-2xl"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="inline-flex items-center gap-2 bg-[#BDF0E1] text-[#373743] px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#16CA95] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/20">
               <Sparkles className="w-4 h-4 text-[#16CA95]" />
               Comprehensive Solutions
             </div>
             
-            <h1 className="text-4xl lg:text-6xl font-bold text-[#373743] mb-6">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
               Our <span className="text-[#16CA95]">Services</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-[#6B7280] mb-8">
+            <p className="text-xl lg:text-2xl text-white/90 mb-8">
               Comprehensive technology solutions designed to transform your business, 
               optimize operations, and drive sustainable growth.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-[#6B7280]">
+            <div className="flex flex-wrap justify-center gap-4 text-white/90">
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5 text-[#16CA95]" />
                 <span>500+ Projects Delivered</span>
@@ -378,7 +412,7 @@ export default function Services() {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-3 gap-8">
             {mainServices.map((service, index) => (
                           <motion.div
               key={service.title}

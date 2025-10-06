@@ -367,7 +367,7 @@ export default function DigitalTransformation() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-[#373743] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-white/30"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#16CA95]/10 to-[#BDF0E1]/20 text-[#16CA95] px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg border border-[#16CA95]/20"
               >
                 <Sparkles className="w-4 h-4 text-[#16CA95]" />
                 <span className="font-semibold">DIGITAL TRANSFORMATION</span>
